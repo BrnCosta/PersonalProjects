@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #363130;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+
+    width: 18rem;
+    height: 7rem;
+
+    padding: 20px;
+    border-radius: 2.5px;
+
+    background-color: #5C5B5A;
+    z-index: 2;
+}
+
+.title {
+    color: whitesmoke;
+    font-size: 16px;
+    padding-bottom: 15px;
+
+    flex-grow: 3;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #363130;
+
+    margin-bottom: 0.5rem;
+
+}
+
+.input {
+    height: 2rem;
+    background-color: #363130;
+    padding-left: 0.5rem;
+
+    flex-grow: 2;
+
+    border: none;
+    color: white;
+    border: 0px;
+
+    outline: none;
+}
+
+.show {
+    height: 25px;
+    width: 2.5rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    border: none;
+    background-color: #5C5B5A;
+
+    color: white;
+    font-size: 8px;
+}
+
+.show:hover {
+    cursor: pointer;
+}
+
+.text {
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.text-weak {
+    color: red;
+    text-shadow: 0 0 10px red;
+}
+
+.text-medium {
+    color: orange;
+    text-shadow: 0 0 10px orange;
+}
+
+.text-strong {
+    color: lime;
+    text-shadow: 0 0 10px lime;
+}
+
+.bar {
+    align-self: flex-start;
+    width: 0;
+    height: 0.15rem;
+
+    border-end-start-radius: 5px;
+    margin-top: -0.15rem;
+
+    transition: width 1s ease, background-color 0.5s linear, box-shadow 0.5s linear;
+}
+
+.weak {
+    width: 20%;
+    background-color: red;
+
+    box-shadow: 0px 0px 10px 2px red,
+        0px 0px 50px 5px red;
+}
+
+.medium {
+    width: 60%;
+    background-color: orange;
+
+    box-shadow: 0px 0px 10px 2px orange,
+        0px 0px 50px 5px orange;
+}
+
+.strong {
+    width: 100%;
+    background-color: lime;
+    border-end-end-radius: 5px;
+
+    box-shadow: 0px 0px 10px 2px lime,
+        0px 0px 50px 5px lime;
+}
