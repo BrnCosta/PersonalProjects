@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: #F2F2F2;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    width: 14vw;
+    min-width: 200px;
+    height: 40vh;
+    min-height: 300px;
+
+    border-radius: 10px;
+
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+
+    -webkit-box-shadow: 0px 4px 22px 8px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 4px 22px 8px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 4px 22px 8px rgba(0, 0, 0, 0.31);
+
+    background-color: #e5f4ff;
+
+    margin: 20px;
+
+    transition: margin 0.5s ease;
+}
+
+.card:hover {
+    margin-top: -20px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #000f3d;
+}
+
+.value {
+    font-weight: 700;
+    font-size: 35px;
+
+    color: #000f3d;
+}
+
+.group-benefit {
+    align-self: flex-start;
+}
+
+.benefit {
+    padding: 5px 0px;
+    font-size: 15px;
+
+    color: #000f3d;
+}
+
+.disable {
+    color: #000f3d6b;
+}
+
+.gold-disable {
+    color: rgba(255, 255, 255, 0.103);
+}
+
+.button {
+    background-color: #000f3d;
+    border: none;
+    border-radius: 20px;
+
+    height: 10%;
+    width: 100%;
+
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #75bbff;
+
+    -webkit-box-shadow: 0px 4px 22px 15px rgba(117, 186, 255, 0.42);
+    -moz-box-shadow: 0px 4px 22px 15px rgba(117, 186, 255, 0.42);
+    box-shadow: 0px 4px 22px 15px rgba(117, 186, 255, 0.42);
+}
+
+.gold-card {
+    background-color: #000f3d;
+    position: relative;
+    overflow: hidden;
+}
+
+.gold-color {
+    color: white;
+}
+
+.gold-button {
+    background-color: white;
+    color: #000f3d;
+}
+
+.gold-button:hover {
+    background-color: #145dff;
+
+    -webkit-box-shadow: 0px 4px 22px 15px rgba(20, 93, 255, 0.36);
+    -moz-box-shadow: 0px 4px 22px 15px rgba(20, 93, 255, 0.36);
+    box-shadow: 0px 4px 22px 15px rgba(20, 93, 255, 0.36);
+}
+
+.featured-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 100px;
+    height: 20px;
+    background-color: #145dff;
+
+    transform: rotate(45deg);
+}
+
+.featured-bar a {
+    color: #000f3d;
+    font-size: 12px;
+    font-weight: 700;
+}
